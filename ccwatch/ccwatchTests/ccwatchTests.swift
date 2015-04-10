@@ -1,6 +1,6 @@
 //
-//  callcycleTests.swift
-//  callcycleTests
+//  ccwatchTests.swift
+//  ccwatchTests
 //
 //  Created by Boy Genius on 2015/04/10.
 //  Copyright (c) 2015 Boy Genius. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class callcycleTests: XCTestCase {
+class ccwatchTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

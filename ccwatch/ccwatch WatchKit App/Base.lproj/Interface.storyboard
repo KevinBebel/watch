@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="D1c-b3-Bpf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="Xr1-YD-IlL">
+            <objects>
+                <controller id="D1c-b3-Bpf" customClass="InterfaceController" customModule="ccwatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="BWH-MQ-bTl">
+                            <items>
+                                <tableRow identifier="row" id="GpH-Cr-EPD" customClass="RowController" customModule="ccwatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="63.5" alignment="left" layout="vertical" spacing="0.0" id="eET-yv-AKr">
+                                        <items>
+                                            <label width="50" height="22" alignment="left" text="   Label" textAlignment="center" numberOfLines="0" id="7IC-a7-VAD">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
+                                            </label>
+                                            <group width="1" height="1" alignment="left" id="jog-tC-wqo">
+                                                <items>
+                                                    <imageView width="15" height="15" alignment="left" verticalAlignment="center" image="ListIcon" id="Ary-o1-hX1"/>
+                                                    <label alignment="left" verticalAlignment="center" text="Label" id="KHD-Hb-8xC">
+                                                        <fontDescription key="font" type="system" weight="thin" pointSize="11"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="achieved" destination="KHD-Hb-8xC" id="GmA-mK-lTV"/>
+                                        <outlet property="rowGroup" destination="eET-yv-AKr" id="IQG-tg-4r2"/>
+                                        <outlet property="rowLabel" destination="7IC-a7-VAD" id="5Tj-UT-Lqu"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="displayTable" destination="BWH-MQ-bTl" id="Ph5-Rj-2gH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="176" y="388"/>
+        </scene>
+    </scenes>
+</document>

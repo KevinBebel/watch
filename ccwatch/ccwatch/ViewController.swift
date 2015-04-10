@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  callcycle
+//  ccwatch
 //
 //  Created by Boy Genius on 2015/04/10.
 //  Copyright (c) 2015 Boy Genius. All rights reserved.
