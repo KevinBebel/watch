@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492A985D1ADE6621008FAA91 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492A985C1ADE6621008FAA91 /* Alamofire.swift */; };
+		492A985E1ADE6621008FAA91 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492A985C1ADE6621008FAA91 /* Alamofire.swift */; };
+		496DA07F1ADE6A7100121BDA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DA07E1ADE6A7100121BDA /* SwiftyJSON.swift */; };
+		496DA0801ADE6A7100121BDA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DA07E1ADE6A7100121BDA /* SwiftyJSON.swift */; };
+		49A656441ADF885E00FB2B88 /* homeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A656431ADF885E00FB2B88 /* homeController.swift */; };
+		49A656461ADF8E3A00FB2B88 /* NavigationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A656451ADF8E3A00FB2B88 /* NavigationInterfaceController.swift */; };
 		49B0BE101AD7D72400BBFD90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0BE0F1AD7D72400BBFD90 /* AppDelegate.swift */; };
 		49B0BE121AD7D72400BBFD90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0BE111AD7D72400BBFD90 /* ViewController.swift */; };
 		49B0BE151AD7D72400BBFD90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B0BE131AD7D72400BBFD90 /* Main.storyboard */; };
@@ -61,6 +67,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		492A985C1ADE6621008FAA91 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		496DA07E1ADE6A7100121BDA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		49A656431ADF885E00FB2B88 /* homeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeController.swift; sourceTree = "<group>"; };
+		49A656451ADF8E3A00FB2B88 /* NavigationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationInterfaceController.swift; sourceTree = "<group>"; };
 		49B0BE0A1AD7D72400BBFD90 /* ccwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ccwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B0BE0E1AD7D72400BBFD90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B0BE0F1AD7D72400BBFD90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +184,10 @@
 				49B0BE391AD7D73600BBFD90 /* Images.xcassets */,
 				49B0BE351AD7D73600BBFD90 /* Supporting Files */,
 				49B0BE551AD7E0B000BBFD90 /* RowController.swift */,
+				492A985C1ADE6621008FAA91 /* Alamofire.swift */,
+				496DA07E1ADE6A7100121BDA /* SwiftyJSON.swift */,
+				49A656431ADF885E00FB2B88 /* homeController.swift */,
+				49A656451ADF8E3A00FB2B88 /* NavigationInterfaceController.swift */,
 			);
 			path = "ccwatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -365,8 +379,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492A985D1ADE6621008FAA91 /* Alamofire.swift in Sources */,
 				49B0BE121AD7D72400BBFD90 /* ViewController.swift in Sources */,
 				49B0BE101AD7D72400BBFD90 /* AppDelegate.swift in Sources */,
+				496DA07F1ADE6A7100121BDA /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,8 +398,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492A985E1ADE6621008FAA91 /* Alamofire.swift in Sources */,
+				49A656461ADF8E3A00FB2B88 /* NavigationInterfaceController.swift in Sources */,
 				49B0BE561AD7E0B000BBFD90 /* RowController.swift in Sources */,
 				49B0BE381AD7D73600BBFD90 /* InterfaceController.swift in Sources */,
+				496DA0801ADE6A7100121BDA /* SwiftyJSON.swift in Sources */,
+				49A656441ADF885E00FB2B88 /* homeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +663,7 @@
 				49B0BE2B1AD7D72400BBFD90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49B0BE2C1AD7D72400BBFD90 /* Build configuration list for PBXNativeTarget "ccwatchTests" */ = {
 			isa = XCConfigurationList;
@@ -651,6 +672,7 @@
 				49B0BE2E1AD7D72400BBFD90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49B0BE4C1AD7D73600BBFD90 /* Build configuration list for PBXNativeTarget "ccwatch WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -659,6 +681,7 @@
 				49B0BE4E1AD7D73600BBFD90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49B0BE4F1AD7D73600BBFD90 /* Build configuration list for PBXNativeTarget "ccwatch WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -667,6 +690,7 @@
 				49B0BE511AD7D73600BBFD90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

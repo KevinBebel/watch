@@ -12,4 +12,8 @@ class RowController: NSObject {
     @IBOutlet weak var rowGroup: WKInterfaceGroup!
     @IBOutlet weak var rowLabel: WKInterfaceLabel!
     @IBOutlet weak var achieved: WKInterfaceLabel!
+    @IBOutlet weak var notAchieved: WKInterfaceLabel!
+    @IBOutlet weak var percentage: WKInterfaceLabel!
+    
+    
 }

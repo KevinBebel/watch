@@ -1,10 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="D1c-b3-Bpf">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14C1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z0H-Yc-YIu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
+        <!--Navigation Interface Controller-->
+        <scene sceneID="ETF-2Q-nnh">
+            <objects>
+                <controller spacing="3" id="f4Y-2K-iaH" customClass="NavigationInterfaceController" customModule="ccwatch_WatchKit_Extension">
+                    <items>
+                        <button alignment="left" id="OAu-Gu-IVI">
+                            <group key="contentGroup" width="1" height="47" alignment="left" id="ikl-nj-nh6">
+                                <items>
+                                    <label width="33" alignment="center" verticalAlignment="center" text="Met" id="Jlv-Pq-SuP">
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </group>
+                            <connections>
+                                <segue destination="D1c-b3-Bpf" kind="push" id="2NT-aX-6ks"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="47" alignment="left" id="iZC-Au-v0k">
+                            <items>
+                                <label width="65" alignment="center" verticalAlignment="center" text="Not Met" id="xxh-B4-rE8">
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <group width="1" height="47" alignment="left" id="gwO-Ia-ehx">
+                            <items>
+                                <label width="106" alignment="center" verticalAlignment="center" text="Under Planned" id="28X-5m-khB">
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="3" right="3" top="3" bottom="3"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-249" y="105"/>
+        </scene>
         <!--Interface Controller-->
         <scene sceneID="Xr1-YD-IlL">
             <objects>
@@ -13,24 +56,31 @@
                         <table alignment="left" id="BWH-MQ-bTl">
                             <items>
                                 <tableRow identifier="row" id="GpH-Cr-EPD" customClass="RowController" customModule="ccwatch_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="63.5" alignment="left" layout="vertical" spacing="0.0" id="eET-yv-AKr">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="0.0" id="eET-yv-AKr">
                                         <items>
-                                            <label width="50" height="22" alignment="left" text="   Label" textAlignment="center" numberOfLines="0" id="7IC-a7-VAD">
-                                                <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
+                                            <label width="127" height="22" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="7IC-a7-VAD">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
                                             </label>
-                                            <group width="1" height="1" alignment="left" id="jog-tC-wqo">
+                                            <label alignment="center" text="Target : 50" id="neP-3W-pkh">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
+                                            </label>
+                                            <group width="150" height="31" alignment="left" id="jog-tC-wqo">
                                                 <items>
-                                                    <imageView width="15" height="15" alignment="left" verticalAlignment="center" image="ListIcon" id="Ary-o1-hX1"/>
-                                                    <label alignment="left" verticalAlignment="center" text="Label" id="KHD-Hb-8xC">
-                                                        <fontDescription key="font" type="system" weight="thin" pointSize="11"/>
+                                                    <imageView width="27" height="21" alignment="left" verticalAlignment="center" image="Achieved" contentMode="scaleAspectFit" id="Ary-o1-hX1"/>
+                                                    <label width="48" alignment="left" verticalAlignment="center" text="10" id="KHD-Hb-8xC">
+                                                        <fontDescription key="font" type="system" weight="medium" pointSize="9"/>
+                                                    </label>
+                                                    <imageView width="21" height="18" alignment="left" verticalAlignment="center" image="percentage" contentMode="scaleAspectFill" id="foA-eH-VPj"/>
+                                                    <label width="23" alignment="left" verticalAlignment="center" text="66%" id="dXz-H0-nyN">
+                                                        <fontDescription key="font" type="system" weight="medium" pointSize="9"/>
                                                     </label>
                                                 </items>
                                             </group>
                                         </items>
-                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                     </group>
                                     <connections>
                                         <outlet property="achieved" destination="KHD-Hb-8xC" id="GmA-mK-lTV"/>
+                                        <outlet property="percentage" destination="dXz-H0-nyN" id="l6J-aT-B3P"/>
                                         <outlet property="rowGroup" destination="eET-yv-AKr" id="IQG-tg-4r2"/>
                                         <outlet property="rowLabel" destination="7IC-a7-VAD" id="5Tj-UT-Lqu"/>
                                     </connections>
@@ -43,7 +93,53 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="176" y="388"/>
+            <point key="canvasLocation" x="68" y="105"/>
+        </scene>
+        <!--Call Cyles-->
+        <scene sceneID="jh8-B5-QFA">
+            <objects>
+                <controller title="Call Cyles" spacing="4" id="z0H-Yc-YIu" customClass="homeController" customModule="ccwatch_WatchKit_Extension">
+                    <items>
+                        <button alignment="left" id="MQy-11-me1">
+                            <group key="contentGroup" width="1" height="70" alignment="left" id="FF5-RD-tTd">
+                                <items>
+                                    <imageView width="41" height="25" alignment="left" verticalAlignment="center" image="calendar" contentMode="scaleAspectFit" id="b5D-7O-Inv"/>
+                                    <label width="61" alignment="center" verticalAlignment="center" text="Today" id="ixQ-2o-WT3">
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94509803921568625" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <variation key="device=watch42mm" height="80"/>
+                            </group>
+                            <connections>
+                                <segue destination="f4Y-2K-iaH" kind="push" identifier="today" id="CoR-kd-Ybj"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="UKj-zd-97P">
+                            <group key="contentGroup" width="1" height="70" alignment="left" id="ZVn-rg-Bmk">
+                                <items>
+                                    <imageView width="41" height="25" alignment="left" verticalAlignment="center" image="calendar" contentMode="scaleAspectFit" id="TqG-eE-iYM"/>
+                                    <label width="77" alignment="center" verticalAlignment="center" text="Yesterday" id="I7R-UP-hv9">
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="device=watch42mm" height="80"/>
+                            </group>
+                            <connections>
+                                <segue destination="f4Y-2K-iaH" kind="push" identifier="Yesterday" id="Sci-oB-eQB"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <edgeInsets key="margins" left="3" right="4" top="3" bottom="3"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-610" y="105"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Sci-oB-eQB"/>
+    </inferredMetricsTieBreakers>
 </document>
