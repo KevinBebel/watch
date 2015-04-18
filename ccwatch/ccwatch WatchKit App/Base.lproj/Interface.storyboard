@@ -19,6 +19,7 @@
                                     </label>
                                 </items>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <variation key="device=watch42mm" height="50"/>
                             </group>
                             <connections>
                                 <segue destination="D1c-b3-Bpf" kind="push" id="2NT-aX-6ks"/>
@@ -32,6 +33,7 @@
                                 </label>
                             </items>
                             <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <variation key="device=watch42mm" height="50"/>
                         </group>
                         <group width="1" height="47" alignment="left" id="gwO-Ia-ehx">
                             <items>
@@ -41,6 +43,7 @@
                                 </label>
                             </items>
                             <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <variation key="device=watch42mm" height="50"/>
                         </group>
                     </items>
                     <edgeInsets key="margins" left="3" right="3" top="3" bottom="3"/>
@@ -48,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="-249" y="105"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Staff-->
         <scene sceneID="Xr1-YD-IlL">
             <objects>
-                <controller id="D1c-b3-Bpf" customClass="InterfaceController" customModule="ccwatch_WatchKit_Extension">
+                <controller title="Staff" id="D1c-b3-Bpf" customClass="InterfaceController" customModule="ccwatch_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="BWH-MQ-bTl">
                             <items>
@@ -62,7 +65,7 @@
                                                 <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
                                             </label>
                                             <label alignment="center" text="Target : 50" id="neP-3W-pkh">
-                                                <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
                                             </label>
                                             <group width="150" height="31" alignment="left" id="jog-tC-wqo">
                                                 <items>
@@ -77,6 +80,9 @@
                                                 </items>
                                             </group>
                                         </items>
+                                        <connections>
+                                            <segue destination="YcE-MS-HTb" kind="push" id="PbL-GT-XdV"/>
+                                        </connections>
                                     </group>
                                     <connections>
                                         <outlet property="achieved" destination="KHD-Hb-8xC" id="GmA-mK-lTV"/>
@@ -93,7 +99,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="68" y="105"/>
+            <point key="canvasLocation" x="-2" y="221"/>
         </scene>
         <!--Call Cyles-->
         <scene sceneID="jh8-B5-QFA">
@@ -137,6 +143,23 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="-610" y="105"/>
+        </scene>
+        <!--Stores-->
+        <scene sceneID="5ow-ER-pPh">
+            <objects>
+                <controller title="Stores" id="YcE-MS-HTb">
+                    <items>
+                        <table alignment="left" id="OJM-DD-6ao">
+                            <items>
+                                <tableRow id="Gxr-Rl-Arp">
+                                    <group key="rootItem" width="1" alignment="left" id="RUY-Wt-643"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="249" y="114"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
