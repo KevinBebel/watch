@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Foundation
+
 
 class ViewController: UIViewController {
-
+    let sharedData = NSUserDefaults(suiteName: "group.watchGrp")
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

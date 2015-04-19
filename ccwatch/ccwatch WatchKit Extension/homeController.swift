@@ -30,7 +30,7 @@ class homeController: WKInterfaceController {
     override func contextForSegueWithIdentifier(segueIdentifier: String) -> AnyObject?{
         let today = NSDate()
         var formatDate = NSDateFormatter();
-        formatDate.dateFormat = "yyyyMMdd";
+        formatDate.dateFormat = "yyyy-MM-dd";
         if(segueIdentifier == "today"){
             return ["date" : formatDate.stringFromDate(today)]
         }else if(segueIdentifier == "Yesterday"){

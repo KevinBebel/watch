@@ -64,7 +64,7 @@
                                             <label width="127" height="22" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="7IC-a7-VAD">
                                                 <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
                                             </label>
-                                            <label alignment="center" text="Target : 50" id="neP-3W-pkh">
+                                            <label height="15" alignment="center" text="Target : 50" id="neP-3W-pkh">
                                                 <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
                                             </label>
                                             <group width="150" height="31" alignment="left" id="jog-tC-wqo">
@@ -85,6 +85,7 @@
                                         </connections>
                                     </group>
                                     <connections>
+                                        <outlet property="Target" destination="neP-3W-pkh" id="Hjk-Ds-nXZ"/>
                                         <outlet property="achieved" destination="KHD-Hb-8xC" id="GmA-mK-lTV"/>
                                         <outlet property="percentage" destination="dXz-H0-nyN" id="l6J-aT-B3P"/>
                                         <outlet property="rowGroup" destination="eET-yv-AKr" id="IQG-tg-4r2"/>
