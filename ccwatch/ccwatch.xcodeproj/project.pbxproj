@@ -13,6 +13,8 @@
 		496DA0801ADE6A7100121BDA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DA07E1ADE6A7100121BDA /* SwiftyJSON.swift */; };
 		49A656441ADF885E00FB2B88 /* homeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A656431ADF885E00FB2B88 /* homeController.swift */; };
 		49A656461ADF8E3A00FB2B88 /* NavigationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A656451ADF8E3A00FB2B88 /* NavigationInterfaceController.swift */; };
+		49AAC2851AE4948200BEA4D0 /* storeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AAC2841AE4948200BEA4D0 /* storeController.swift */; };
+		49AAC2871AE494BD00BEA4D0 /* storeRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AAC2861AE494BD00BEA4D0 /* storeRowController.swift */; };
 		49B0BE101AD7D72400BBFD90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0BE0F1AD7D72400BBFD90 /* AppDelegate.swift */; };
 		49B0BE121AD7D72400BBFD90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0BE111AD7D72400BBFD90 /* ViewController.swift */; };
 		49B0BE151AD7D72400BBFD90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B0BE131AD7D72400BBFD90 /* Main.storyboard */; };
@@ -72,6 +74,8 @@
 		496DA07E1ADE6A7100121BDA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		49A656431ADF885E00FB2B88 /* homeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeController.swift; sourceTree = "<group>"; };
 		49A656451ADF8E3A00FB2B88 /* NavigationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationInterfaceController.swift; sourceTree = "<group>"; };
+		49AAC2841AE4948200BEA4D0 /* storeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storeController.swift; sourceTree = "<group>"; };
+		49AAC2861AE494BD00BEA4D0 /* storeRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storeRowController.swift; sourceTree = "<group>"; };
 		49B0BE0A1AD7D72400BBFD90 /* ccwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ccwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B0BE0E1AD7D72400BBFD90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B0BE0F1AD7D72400BBFD90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				496DA07E1ADE6A7100121BDA /* SwiftyJSON.swift */,
 				49A656431ADF885E00FB2B88 /* homeController.swift */,
 				49A656451ADF8E3A00FB2B88 /* NavigationInterfaceController.swift */,
+				49AAC2841AE4948200BEA4D0 /* storeController.swift */,
+				49AAC2861AE494BD00BEA4D0 /* storeRowController.swift */,
 			);
 			path = "ccwatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -406,9 +412,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49AAC2851AE4948200BEA4D0 /* storeController.swift in Sources */,
 				492A985E1ADE6621008FAA91 /* Alamofire.swift in Sources */,
 				49A656461ADF8E3A00FB2B88 /* NavigationInterfaceController.swift in Sources */,
 				49B0BE561AD7E0B000BBFD90 /* RowController.swift in Sources */,
+				49AAC2871AE494BD00BEA4D0 /* storeRowController.swift in Sources */,
 				49B0BE381AD7D73600BBFD90 /* InterfaceController.swift in Sources */,
 				496DA0801ADE6A7100121BDA /* SwiftyJSON.swift in Sources */,
 				49A656441ADF885E00FB2B88 /* homeController.swift in Sources */,

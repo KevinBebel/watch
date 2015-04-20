@@ -11,6 +11,7 @@ import Foundation
 
 
 class NavigationInterfaceController: WKInterfaceController {
+    @IBOutlet weak var image: WKInterfaceImage!
     
     var date:String = ""
     var data:JSON = JSON.nullJSON
@@ -20,17 +21,24 @@ class NavigationInterfaceController: WKInterfaceController {
     var notMetModel = [Dictionary<String,String>()]
     var underPlannedModel = [Dictionary<String,String>()]
     
+    var metstoreModel = [[Dictionary<String,String>()]]
+    var notMetstoreModel = [[Dictionary<String,String>()]]
+    var underPlannedstoreModel = [[Dictionary<String,String>()]]
+    let defaults = NSUserDefaults(suiteName: "watchGrp")
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        println(context)
         self.date = (context as! NSDictionary)["date"] as! String;
-        println("The Current Date is : \(self.date)" )
-        //loadEventData()
+       
+        println(self.data)
+        loadEventData()
         // Configure interface objects here.
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
-        loadEventData()
+        //loadEventData()
         super.willActivate()
         
     }
@@ -42,62 +50,26 @@ class NavigationInterfaceController: WKInterfaceController {
     
     func loadEventData() {
         //www.super-trade.co.za:8083/rest/index.php/GetStoredProc?StoredProc=usp_callcycle_orders_dailyreport&params=(CONV|BERNICEMYERS)
+        var date = self.defaults?.objectForKey("date") as! String
+        println("The Current Date is : \(date)" )
         var url = "http://www.super-trade.co.za:8083/rest/index.php/GetStoredProc?StoredProc=usp_callcycle_orders_dailyreport&params=(CONV|BERNICEMYERS|'2015-04-16')"
         url = url.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         println(url)
         request(.GET,url).responseJSON{ (_, _,json,_) in
             println(json)
             self.data = JSON(json!)
-            if let items = self.data.array{
-                var person  = ""
-                var visited = 0
-                var target  = 0
-                var objectToAppend = Dictionary<String, String>()
-                var oldPerson = ""
-                var PersonCounter = 0
-                for item in items {
-                    if let userID = item["UserID"].string{
-                        if userID == person{
-                            target++
-                            if let vist = item["count"].int{
-                                if vist > 0{
-                                    visited++
-                                }
-                            }
-                        }else{
-                            oldPerson = person
-                            if(!oldPerson.isEmpty){
-                                objectToAppend["name"]    = oldPerson
-                                objectToAppend["visited"] = String(visited)
-                                objectToAppend["target"]  = String(target)
-                                
-                                var percentage = (((String(visited) as NSString).floatValue) / ((String(target) as NSString).floatValue)) * 100
-                                
-                                self.tableViewObject.insert(objectToAppend, atIndex:PersonCounter)
-                                PersonCounter++
-                                visited = 0
-                                if let vist = item["count"].int{
-                                    if vist > 0{
-                                        visited = 1
-                                    }
-                                }
-                                target  = 1
-                                person = userID
-                                
-                            }else{
-                                visited = 0
-                                person = userID
-                            }
-                            
-                        }
-                    }//checking userID
-                }//Items Loop
-            }//End of checking if Array
-            println(self.tableViewObject)
         }
     }
     
     override func contextForSegueWithIdentifier(segueIdentifier: String) -> AnyObject?{
+        if(segueIdentifier == "met" ){
+            //println(self.metModel)
+            self.defaults?.setObject("met", forKey: "optClicked")
+        }else if(segueIdentifier == "notmet"){
+            self.defaults?.setObject("notmet", forKey: "optClicked")
+        }else if(segueIdentifier == "underplanned"){
+            self.defaults?.setObject("underplanned", forKey: "optClicked")
+        }
         return self.data.arrayObject
     }
 }

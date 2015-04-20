@@ -31,10 +31,13 @@ class homeController: WKInterfaceController {
         let today = NSDate()
         var formatDate = NSDateFormatter();
         formatDate.dateFormat = "yyyy-MM-dd";
+        let defaults = NSUserDefaults(suiteName: "watchGrp")
         if(segueIdentifier == "today"){
+            defaults?.setObject(formatDate.stringFromDate(today), forKey: "date")
             return ["date" : formatDate.stringFromDate(today)]
         }else if(segueIdentifier == "Yesterday"){
             let yesterday = NSCalendar.currentCalendar().dateByAddingUnit(.CalendarUnitDay,value: -1,toDate: today,options: NSCalendarOptions(0))
+                defaults?.setObject(formatDate.stringFromDate(yesterday!), forKey: "date")
                 //var convdate = formatDate.stringFromDate(yesterday!)
             return ["date" : formatDate.stringFromDate(yesterday!)]
         }else{
