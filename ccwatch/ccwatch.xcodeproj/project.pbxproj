@@ -71,6 +71,7 @@
 /* Begin PBXFileReference section */
 		491801391AE3D01C00360D83 /* ccwatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ccwatch.entitlements; sourceTree = "<group>"; };
 		492A985C1ADE6621008FAA91 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		493D28FC1AE4C6E500666C3B /* ccwatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ccwatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		496DA07E1ADE6A7100121BDA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		49A656431ADF885E00FB2B88 /* homeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeController.swift; sourceTree = "<group>"; };
 		49A656451ADF8E3A00FB2B88 /* NavigationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationInterfaceController.swift; sourceTree = "<group>"; };
@@ -186,6 +187,7 @@
 		49B0BE341AD7D73600BBFD90 /* ccwatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				493D28FC1AE4C6E500666C3B /* ccwatch WatchKit Extension.entitlements */,
 				49B0BE371AD7D73600BBFD90 /* InterfaceController.swift */,
 				49B0BE391AD7D73600BBFD90 /* Images.xcassets */,
 				49B0BE351AD7D73600BBFD90 /* Supporting Files */,
@@ -323,9 +325,16 @@
 					};
 					49B0BE321AD7D73600BBFD90 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = Z4UQC77AP5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					49B0BE3C1AD7D73600BBFD90 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = Z4UQC77AP5;
 					};
 				};
 			};
@@ -618,6 +627,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -635,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IBSC_MODULE = ccwatch_WatchKit_Extension;
 				INFOPLIST_FILE = "ccwatch WatchKit App/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -647,6 +658,9 @@
 		49B0BE501AD7D73600BBFD90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ccwatch WatchKit Extension/ccwatch WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -654,6 +668,7 @@
 				INFOPLIST_FILE = "ccwatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -661,9 +676,13 @@
 		49B0BE511AD7D73600BBFD90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ccwatch WatchKit Extension/ccwatch WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ccwatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

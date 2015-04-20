@@ -5,13 +5,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Navigation Interface Controller-->
+        <!--Menu-->
         <scene sceneID="ETF-2Q-nnh">
             <objects>
-                <controller spacing="3" id="f4Y-2K-iaH" customClass="NavigationInterfaceController" customModule="ccwatch_WatchKit_Extension">
+                <controller title="Menu" spacing="3" id="f4Y-2K-iaH" customClass="NavigationInterfaceController" customModule="ccwatch_WatchKit_Extension">
                     <items>
-                        <imageView width="136" height="144" alignment="left" id="Bha-hT-gFb"/>
-                        <button alignment="left" hidden="YES" id="OAu-Gu-IVI">
+                        <imageView width="136" height="144" alignment="left" hidden="YES" id="Bha-hT-gFb"/>
+                        <button alignment="left" id="OAu-Gu-IVI">
                             <group key="contentGroup" width="1" height="47" alignment="left" id="ikl-nj-nh6">
                                 <items>
                                     <label width="33" alignment="center" verticalAlignment="center" text="Met" id="Jlv-Pq-SuP">
@@ -20,13 +20,13 @@
                                     </label>
                                 </items>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <variation key="device=watch42mm" height="50"/>
+                                <variation key="device=watch42mm" height="55"/>
                             </group>
                             <connections>
                                 <segue destination="D1c-b3-Bpf" kind="push" identifier="met" id="2NT-aX-6ks"/>
                             </connections>
                         </button>
-                        <button alignment="left" hidden="YES" id="Ucb-3V-be1">
+                        <button alignment="left" id="Ucb-3V-be1">
                             <group key="contentGroup" width="1" height="47" alignment="left" id="nsQ-4Q-IaI">
                                 <items>
                                     <label width="65" alignment="center" verticalAlignment="center" text="Not Met" id="o8n-BT-wvf">
@@ -35,13 +35,13 @@
                                     </label>
                                 </items>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <variation key="device=watch42mm" height="50"/>
+                                <variation key="device=watch42mm" height="53"/>
                             </group>
                             <connections>
                                 <segue destination="D1c-b3-Bpf" kind="push" identifier="notmet" id="6xu-3o-Ylg"/>
                             </connections>
                         </button>
-                        <button alignment="left" hidden="YES" id="hmP-H1-u5R">
+                        <button alignment="left" id="hmP-H1-u5R">
                             <group key="contentGroup" width="1" height="47" alignment="left" id="Rs1-E3-XJU">
                                 <items>
                                     <label width="117" alignment="center" verticalAlignment="center" text="Under planned" id="can-PA-ZHd">
@@ -50,7 +50,7 @@
                                     </label>
                                 </items>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <variation key="device=watch42mm" height="50"/>
+                                <variation key="device=watch42mm" height="53"/>
                             </group>
                             <connections>
                                 <segue destination="D1c-b3-Bpf" kind="push" identifier="underplanned" id="0A8-gj-x6B"/>
@@ -60,6 +60,9 @@
                     <edgeInsets key="margins" left="3" right="3" top="3" bottom="3"/>
                     <connections>
                         <outlet property="image" destination="Bha-hT-gFb" id="Qnp-u3-YYU"/>
+                        <outlet property="metbtn" destination="OAu-Gu-IVI" id="qg4-eD-l5d"/>
+                        <outlet property="notmetbtn" destination="Ucb-3V-be1" id="3be-dO-rVZ"/>
+                        <outlet property="unplannedbtn" destination="hmP-H1-u5R" id="oGk-18-lsO"/>
                     </connections>
                 </controller>
             </objects>
@@ -164,6 +167,12 @@
                                 <segue destination="f4Y-2K-iaH" kind="push" identifier="today" id="CoR-kd-Ybj"/>
                             </connections>
                         </button>
+                        <label width="133" height="91" alignment="left" hidden="YES" text="Please Sign in using your iPhone and press refresh" textAlignment="center" numberOfLines="4" id="242-qU-mS3"/>
+                        <button width="1" alignment="left" hidden="YES" title="Refresh" id="N1F-bd-BIJ">
+                            <connections>
+                                <action selector="refresh" destination="z0H-Yc-YIu" id="2vi-Uh-q9K"/>
+                            </connections>
+                        </button>
                         <button alignment="left" id="UKj-zd-97P">
                             <group key="contentGroup" width="1" height="70" alignment="left" id="ZVn-rg-Bmk">
                                 <items>
@@ -182,6 +191,10 @@
                         </button>
                     </items>
                     <edgeInsets key="margins" left="3" right="4" top="3" bottom="3"/>
+                    <connections>
+                        <outlet property="todatbtn" destination="MQy-11-me1" id="c5a-eZ-CP1"/>
+                        <outlet property="yesterdaybtn" destination="UKj-zd-97P" id="4rQ-xs-RNL"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-610" y="105"/>

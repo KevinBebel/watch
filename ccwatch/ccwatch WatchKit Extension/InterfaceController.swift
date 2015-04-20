@@ -64,10 +64,15 @@ class InterfaceController: WKInterfaceController {
                     }else{
                         oldPerson = person
                         if(!oldPerson.isEmpty){
+                            if(visited > target){
+                                visited = target
+                            }
+                            
                             objectToAppend["name"]    = oldPerson
                             objectToAppend["visited"] = String(visited)
                             objectToAppend["target"]  = String(target)
                             //objectToAppend["Stores"]  = stores
+                            
                             
                             var percentage = (((String(visited) as NSString).floatValue) / ((String(target) as NSString).floatValue)) * 100
                             
