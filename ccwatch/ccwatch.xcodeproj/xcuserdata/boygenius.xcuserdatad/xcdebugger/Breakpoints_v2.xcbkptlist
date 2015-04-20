@@ -223,6 +223,38 @@
             endingLineNumber = "71"
             landmarkName = "loadEventData()"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ccwatch_WatchKit_Extension.NavigationInterfaceController.loadEventData (ccwatch_WatchKit_Extension.NavigationInterfaceController)() -&gt; ()"
+                  moduleName = "ccwatch WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/boygenius/Documents/_Development/XCODE/watch/ccwatch/ccwatch%20WatchKit%20Extension/NavigationInterfaceController.swift"
+                  timestampString = "451211976.572037"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "1241">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ccwatch_WatchKit_Extension.NavigationInterfaceController.(loadEventData (ccwatch_WatchKit_Extension.NavigationInterfaceController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "ccwatch WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/boygenius/Documents/_Development/XCODE/watch/ccwatch/ccwatch%20WatchKit%20Extension/NavigationInterfaceController.swift"
+                  timestampString = "451211976.572231"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
