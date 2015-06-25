@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3925EA8E-F0F0-469D-A0BF-9805223929C2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>callcycle</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8C99906D20F80690E4393BD763D6EFBD28E5962B</key>
+		<string>https://github.com/KevinBebel/watch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>callcycle/callcycle.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8C99906D20F80690E4393BD763D6EFBD28E5962B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/KevinBebel/watch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8C99906D20F80690E4393BD763D6EFBD28E5962B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8C99906D20F80690E4393BD763D6EFBD28E5962B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>watch</string>
+		</dict>
+	</array>
+</dict>
+</plist>
